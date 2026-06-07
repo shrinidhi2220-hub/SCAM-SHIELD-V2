@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Settings | Scam Shield</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/settings.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="bg-animation"></div>
+
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+<div class="orb orb3"></div>
+
+<nav class="navbar">
+
+<div class="logo">
+🛡 Scam Shield
+</div>
+
+<ul class="nav-links">
+
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="scanner.html">Scanner</a></li>
+<li><a href="url-analyzer.html">URL Analyzer</a></li>
+<li><a href="recruiter.html">Recruiter</a></li>
+<li><a href="reports.html">Reports</a></li>
+<li><a href="report-scam.html">Reports</a></li>
+<li><a href="help.html">Help</a></li>
+
+</ul>
+
+<div class="nav-right">
+
+<a href="notifications.html">🔔</a>
+<a href="profile.html">👤</a>
+<a href="settings.html">⚙️</a>
+
+</div>
+
+</nav>
+
+<section class="settings-header">
+
+<h1>⚙ Settings Center</h1>
+
+<p>
+Customize your Scam Shield experience
+</p>
+
+</section>
+
+<div class="settings-container">
+
+<!-- Account Settings -->
+
+<div class="settings-card">
+
+<h2>👤 Account Settings</h2>
+
+<input
+type="text"
+id="username"
+placeholder="Enter Username">
+
+<input
+type="email"
+id="email"
+placeholder="Enter Email">
+
+<button id="saveProfile">
+Save Profile
+</button>
+
+</div>
+
+<!-- Language Settings -->
+
+<div class="settings-card">
+
+<h2>🌐 Language & Region</h2>
+
+<select id="language">
+
+<option value="English">🇺🇸 English</option>
+<option value="Hindi">🇮🇳 Hindi</option>
+<option value="Kannada">🇮🇳 Kannada</option>
+<option value="Telugu">🇮🇳 Telugu</option>
+<option value="Tamil">🇮🇳 Tamil</option>
+<option value="Marathi">🇮🇳 Marathi</option>
+
+</select>
+
+<button id="saveLanguage">
+Save Language
+</button>
+
+</div>
+
+<!-- Theme Settings -->
+
+<div class="settings-card">
+
+<h2>🎨 Theme Selection</h2>
+
+<select id="theme">
+
+<option value="Purple">💜 Purple</option>
+<option value="Blue">💙 Blue</option>
+<option value="Green">💚 Green</option>
+<option value="Red">❤️ Red</option>
+
+</select>
+
+<button id="saveTheme">
+Save Theme
+</button>
+
+</div>
+
+<!-- Notification Settings -->
+
+<div class="settings-card">
+
+<h2>🔔 Notification Preferences</h2>
+
+<label>
+<input type="checkbox" id="scamAlerts">
+Scam Alerts
+</label>
+
+<label>
+<input type="checkbox" id="urlAlerts">
+URL Alerts
+</label>
+
+<label>
+<input type="checkbox" id="recruiterAlerts">
+Recruiter Alerts
+</label>
+
+<label>
+<input type="checkbox" id="emailNotifications">
+Email Notifications
+</label>
+
+<button id="saveNotifications">
+Save Preferences
+</button>
+
+</div>
+
+<!-- Privacy Settings -->
+
+<div class="settings-card">
+
+<h2>🛡 Privacy Controls</h2>
+
+<button id="clearMessageHistory">
+Clear Message History
+</button>
+
+<button id="clearURLHistory">
+Clear URL History
+</button>
+
+<button id="clearRecruiterHistory">
+Clear Recruiter History
+</button>
+
+</div>
+
+<!-- System Settings -->
+
+<div class="settings-card">
+
+<h2>⚡ System Preferences</h2>
+
+<label>
+<input type="checkbox" id="animations">
+Enable Animations
+</label>
+
+<label>
+<input type="checkbox" id="securityTips">
+Show Security Tips
+</label>
+
+<label>
+<input type="checkbox" id="autoSave">
+Auto Save Reports
+</label>
+
+<button id="saveSystem">
+Save System Settings
+</button>
+
+</div>
+
+<!-- Security Section -->
+
+<div class="settings-card backend-card">
+
+<h2>🔒 Security Features</h2>
+
+<button class="backend-btn">
+Change Password
+</button>
+
+<button class="backend-btn">
+Two Factor Authentication
+</button>
+
+<button class="backend-btn">
+Logout All Devices
+</button>
+
+<button class="backend-btn">
+Delete Account
+</button>
+
+<p class="backend-note">
+
+⚠ These features require backend integration and are currently under development.
+
+</p>
+
+</div>
+
+</div>
+
+<div id="successPopup" class="success-popup">
+
+✅ Settings Saved Successfully
+
+</div>
+
+<script src="../js/settings.js"></script>
+
+</body>
+
+</html>

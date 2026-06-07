@@ -1,0 +1,217 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Notifications | Scam Shield</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/notifications.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="bg-animation"></div>
+
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+<div class="orb orb3"></div>
+
+<nav class="navbar">
+
+<div class="logo">🛡 Scam Shield</div>
+
+<ul class="nav-links">
+
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="scanner.html">Scanner</a></li>
+<li><a href="url-analyzer.html">URL Analyzer</a></li>
+<li><a href="recruiter.html">Recruiter</a></li>
+<li><a href="reports.html">Reports</a></li>
+<li><a href="report-scam.html">Report Scam</a></li>
+
+</ul>
+
+<div class="nav-right">
+
+<a href="notifications.html">🔔</a>
+<a href="profile.html">👤</a>
+<a href="settings.html">⚙️</a>
+<li><a href="help.html">Help</a></li>
+
+</div>
+
+</nav>
+
+<section class="notification-header">
+
+<h1>🔔 Security Notification Center</h1>
+
+<p>Real-Time Cyber Threat Intelligence Dashboard</p>
+
+</section>
+
+<section class="stats-row">
+
+<div class="stat-card red">
+<h3>Critical Alerts</h3>
+<span id="criticalCount">3</span>
+</div>
+
+<div class="stat-card orange">
+<h3>Warnings</h3>
+<span id="warningCount">5</span>
+</div>
+
+<div class="stat-card green">
+<h3>Safe Events</h3>
+<span id="safeCount">12</span>
+</div>
+
+<div class="stat-card blue">
+<h3>Unread</h3>
+<span id="unreadCount">4</span>
+</div>
+
+</section>
+
+<section class="notification-actions">
+
+<button id="markAllRead">
+✓ Mark All Read
+</button>
+
+<button id="clearNotifications">
+🗑 Clear All
+</button>
+
+</section>
+
+<section class="notification-container">
+
+<div class="notification-card critical unread">
+
+<div class="icon">🚨</div>
+
+<div class="content">
+
+<h3>Critical Scam Detected</h3>
+
+<p>
+A recently scanned message contains multiple phishing indicators.
+</p>
+
+<span>2 minutes ago</span>
+
+</div>
+
+</div>
+
+<div class="notification-card warning unread">
+
+<div class="icon">⚠️</div>
+
+<div class="content">
+
+<h3>Suspicious Recruiter Found</h3>
+
+<p>
+Recruiter verification returned a high risk score.
+</p>
+
+<span>10 minutes ago</span>
+
+</div>
+
+</div>
+
+<div class="notification-card safe">
+
+<div class="icon">✅</div>
+
+<div class="content">
+
+<h3>URL Scan Completed</h3>
+
+<p>
+No phishing indicators detected.
+</p>
+
+<span>1 hour ago</span>
+
+</div>
+
+</div>
+
+<div class="notification-card info">
+
+<div class="icon">🎓</div>
+
+<div class="content">
+
+<h3>Cyber Security Tip</h3>
+
+<p>
+Never share OTPs or banking credentials.
+</p>
+
+<span>Today</span>
+
+</div>
+
+</div>
+
+<div class="notification-card update unread">
+
+<div class="icon">📢</div>
+
+<div class="content">
+
+<h3>Platform Update</h3>
+
+<p>
+Recruiter Verification V2 has been added.
+</p>
+
+<span>Today</span>
+
+</div>
+
+</div>
+<div class="notification-card update">
+
+<div class="icon">🚩</div>
+
+<div class="content">
+
+<h3>Report Scam Portal Available</h3>
+
+<p>
+Users can now submit scam reports and upload evidence.
+</p>
+
+<span>Today</span>
+
+</div>
+
+</div>
+
+</section>
+
+<div id="notificationPopup" class="notification-popup">
+
+Action Completed
+
+</div>
+
+<script src="../js/notifications.js"></script>
+
+</body>
+
+</html>

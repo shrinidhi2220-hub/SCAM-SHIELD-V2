@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Recruiter Verification | Scam Shield</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/recruiter.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="bg-animation"></div>
+
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+<div class="orb orb3"></div>
+
+<nav class="navbar">
+
+<div class="logo">🛡 Scam Shield</div>
+
+<ul class="nav-links">
+
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="scanner.html">Scanner</a></li>
+<li><a href="url-analyzer.html">URL Analyzer</a></li>
+<li><a href="recruiter.html">Recruiter Check</a></li>
+<li><a href="reports.html">Reports</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="report-scam.html">Report Scam</a></li>
+<li><a href="help.html">Help</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Recruiter Verification Center</h1>
+
+<p>
+Verify recruiters, job offers, internships and hiring messages.
+</p>
+
+</section>
+
+<section class="main-container">
+
+<div class="verification-form">
+
+<h2>Recruiter Information</h2>
+
+<input type="text" id="recruiterName" placeholder="Recruiter Name">
+
+<input type="text" id="companyName" placeholder="Company Name">
+
+<input type="email" id="recruiterEmail" placeholder="Recruiter Email">
+
+<input type="text" id="linkedinUrl" placeholder="LinkedIn Profile URL">
+
+<input type="text" id="companyWebsite" placeholder="Company Website">
+
+<input type="text" id="jobRole" placeholder="Job Role">
+
+<input type="number" id="salary" placeholder="Salary / Stipend Amount">
+
+<textarea
+id="jobDescription"
+placeholder="Paste complete job or internship offer..."
+></textarea>
+
+<div class="upload-area">
+
+<label class="upload-btn">
+
+📷 Upload Screenshot
+
+<input type="file" id="imageUpload" hidden>
+
+</label>
+
+<span id="imageName">
+No Screenshot Selected
+</span>
+
+</div>
+
+<div class="upload-area">
+
+<label class="upload-btn">
+
+📄 Upload Offer Letter PDF
+
+<input type="file" id="pdfUpload" hidden>
+
+</label>
+
+<span id="pdfName">
+No PDF Selected
+</span>
+
+</div>
+
+<button id="verifyBtn">
+
+Verify Recruiter
+
+</button>
+
+</div>
+
+<div class="result-panel">
+
+<h2>Verification Report</h2>
+
+<div class="report-card">
+
+<h3>Risk Score</h3>
+
+<p id="riskScore">0%</p>
+
+</div>
+
+<div class="report-card">
+
+<h3>Status</h3>
+
+<p id="riskStatus">
+Waiting For Verification
+</p>
+
+</div>
+
+<div class="report-card">
+
+<h3>Email Analysis</h3>
+
+<p id="emailAnalysis">
+Not Checked
+</p>
+
+</div>
+
+<div class="report-card">
+
+<h3>LinkedIn Analysis</h3>
+
+<p id="linkedinAnalysis">
+Not Checked
+</p>
+
+</div>
+
+<div class="report-card">
+
+<h3>Salary Analysis</h3>
+
+<p id="salaryAnalysis">
+Not Checked
+</p>
+
+</div>
+
+<div class="report-card">
+
+<h3>Company Analysis</h3>
+
+<p id="companyAnalysis">
+Not Checked
+</p>
+
+</div>
+
+<div class="risk-meter">
+
+<div class="meter-bg">
+
+<div class="meter-fill"></div>
+
+</div>
+
+</div>
+
+<div class="report-card">
+
+<h3>AI Recommendation</h3>
+
+<p id="recommendation">
+Waiting For Verification
+</p>
+
+</div>
+
+<div class="history-card">
+
+<h3>Recent Recruiter Checks</h3>
+
+<ul id="historyList">
+
+<li>No Checks Yet</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="../js/recruiter.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Message Scanner | Scam Shield</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/scanner.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="bg-animation"></div>
+
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+<div class="orb orb3"></div>
+
+<nav class="navbar">
+
+<div class="logo">
+🛡 Scam Shield
+</div>
+
+<ul class="nav-links">
+
+<li><a href="dashboard.html">Dashboard</a></li>
+
+<li><a href="scanner.html">Scanner</a></li>
+
+<li><a href="url-analyzer.html">URL Analyzer</a></li>
+
+<li><a href="recruiter.html">Recruiter Check</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li><a href="report-scam.html">Report Scam</a></li>
+
+<li><a href="reports.html">Reports</a></li>
+
+<li><a href="help.html">Help</a></li>
+
+</ul>
+
+</nav>
+
+<section class="scanner-hero">
+
+<h1>Message Scanner</h1>
+
+<p>
+Analyze SMS, Emails, WhatsApp messages,
+screenshots and PDFs for scam indicators.
+</p>
+
+</section>
+
+<section class="scanner-container">
+
+<div class="scanner-box">
+
+<h2>Scan Content</h2>
+
+<textarea
+id="messageInput"
+placeholder="Paste SMS, Email or WhatsApp message..."
+></textarea>
+
+<div class="upload-section">
+
+<label class="upload-card">
+
+📷 Upload Screenshot
+
+<input
+type="file"
+id="imageUpload"
+accept="image/*"
+hidden>
+
+</label>
+
+<span id="imageName">
+No Screenshot Selected
+</span>
+
+</div>
+
+<div class="upload-section">
+
+<label class="upload-card">
+
+📄 Upload PDF
+
+<input
+type="file"
+id="pdfUpload"
+accept=".pdf"
+hidden>
+
+</label>
+
+<span id="pdfName">
+No PDF Selected
+</span>
+
+</div>
+
+<button id="scanBtn">
+
+Analyze Content
+
+</button>
+
+</div>
+
+<div class="result-box">
+
+<h2>Scan Results</h2>
+
+<div class="result-item">
+
+<h3>Risk Score</h3>
+
+<p id="riskScore">
+0%
+</p>
+
+</div>
+
+<div class="result-item">
+
+<h3>Status</h3>
+
+<p id="riskStatus">
+Waiting For Analysis
+</p>
+
+</div>
+
+<div class="result-item">
+
+<h3>Suspicious Keywords</h3>
+
+<p id="keywords">
+None
+</p>
+
+</div>
+
+<div class="risk-meter">
+
+<div class="meter-bg">
+
+<div class="meter-fill"></div>
+
+</div>
+
+</div>
+
+<div class="result-item">
+
+<h3>AI Explanation</h3>
+
+<p id="aiExplanation">
+Waiting For Analysis
+</p>
+
+</div>
+
+<div class="history-box">
+
+<h3>Recent Scans</h3>
+
+<ul id="historyList">
+
+<li>No Scans Yet</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="../js/scanner.js"></script>
+
+</body>
+
+</html>

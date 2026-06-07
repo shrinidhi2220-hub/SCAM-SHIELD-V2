@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Report Scam | Scam Shield</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/report-scam.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="bg-animation"></div>
+
+<div class="orb orb1"></div>
+<div class="orb orb2"></div>
+<div class="orb orb3"></div>
+
+<nav class="navbar">
+
+<div class="logo">
+🛡 Scam Shield
+</div>
+
+<ul class="nav-links">
+
+<li><a href="dashboard.html">Dashboard</a></li>
+<li><a href="scanner.html">Scanner</a></li>
+<li><a href="url-analyzer.html">URL Analyzer</a></li>
+<li><a href="recruiter.html">Recruiter</a></li>
+<li><a href="reports.html">Reports</a></li>
+
+</ul>
+
+<div class="nav-right">
+
+<a href="notifications.html">🔔</a>
+<a href="profile.html">👤</a>
+<a href="settings.html">⚙️</a>
+<li><a href="help.html">Help</a></li>
+
+</div>
+
+</nav>
+
+<section class="report-header">
+
+<h1>🚩 Report A Scam</h1>
+
+<p>
+Help protect the community by reporting suspicious activities.
+</p>
+
+</section>
+
+<div class="report-container">
+
+<div class="report-card">
+
+<h2>Scam Details</h2>
+
+<label>Scam Type</label>
+
+<select id="scamType">
+
+<option value="">Select Scam Type</option>
+
+<option>Phishing</option>
+
+<option>Fake Job Offer</option>
+
+<option>UPI Fraud</option>
+
+<option>WhatsApp Scam</option>
+
+<option>Telegram Scam</option>
+
+<option>Investment Scam</option>
+
+<option>Lottery Scam</option>
+
+<option>Banking Fraud</option>
+
+<option>Other</option>
+
+</select>
+
+<label>Website URL</label>
+
+<input
+type="text"
+id="website"
+placeholder="https://example.com">
+
+<label>Phone Number</label>
+
+<input
+type="text"
+id="phone"
+placeholder="+91 XXXXX XXXXX">
+
+<label>UPI ID</label>
+
+<input
+type="text"
+id="upi"
+placeholder="example@upi">
+
+<label>Scammer Name (Optional)</label>
+
+<input
+type="text"
+id="scammerName"
+placeholder="Enter name">
+
+<label>Risk Level</label>
+
+<select id="riskLevel">
+
+<option>Low</option>
+<option>Medium</option>
+<option>High</option>
+<option>Critical</option>
+
+</select>
+
+<label>Description</label>
+
+<textarea
+id="description"
+placeholder="Describe the scam in detail..."
+></textarea>
+
+</div>
+
+<div class="report-card">
+
+<h2>Evidence Upload</h2>
+
+<div class="upload-box">
+
+<label class="upload-btn">
+
+📷 Upload Screenshot
+
+<input
+type="file"
+id="imageUpload"
+hidden>
+
+</label>
+
+<p id="imageName">
+No Screenshot Selected
+</p>
+
+</div>
+
+<div class="upload-box">
+
+<label class="upload-btn">
+
+📄 Upload PDF
+
+<input
+type="file"
+id="pdfUpload"
+hidden>
+
+</label>
+
+<p id="pdfName">
+No PDF Selected
+</p>
+
+</div>
+
+<button id="submitReport">
+
+🚀 Submit Scam Report
+
+</button>
+
+</div>
+
+<div class="report-card">
+
+<h2>Community Protection</h2>
+
+<div class="info-box">
+
+<h3>🛡 Why Report?</h3>
+
+<p>
+Your reports help identify fraud patterns and protect other users from scams.
+</p>
+
+</div>
+
+<div class="info-box">
+
+<h3>⚡ Quick Response</h3>
+
+<p>
+Reported threats can be reviewed and added to future Scam Shield intelligence databases.
+</p>
+
+</div>
+
+<div class="info-box">
+
+<h3>🌍 Community Impact</h3>
+
+<p>
+Every report contributes to a safer online ecosystem.
+</p>
+
+</div>
+
+</div>
+
+<div class="report-card history-card">
+
+<h2>Recent Reports</h2>
+
+<ul id="reportHistory">
+
+<li>No Reports Yet</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div id="reportPopup" class="report-popup">
+
+✅ Report Submitted Successfully
+
+</div>
+
+<script src="../js/report-scam.js"></script>
+
+</body>
+
+</html>
